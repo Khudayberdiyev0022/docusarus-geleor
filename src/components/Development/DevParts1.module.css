@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+.parts1 {
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  background: #f2f8ff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.resursGroup {
+  width: 57%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.resursGroup p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.resursGroup h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 120%;
+}
+
+.resursGroup .platforms {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.imgResurs {
+  width: 35%;
+  background-size: cover;
+}
+
+.resursGroupBottom {
+  width: 70%;
+  margin: auto;
+}
+
+.resursGroupBottom h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 120%;
+  margin-bottom: 2rem;
+}
+
+.resursGroupBottom p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 1200px) {
+  .resursGroup {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+  }
+  .imgResurs {
+    width: 50%;
+    background-size: cover;
+    margin: auto;
+  }
+  .resursGroup h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .resursGroup {
+    align-items: baseline;
+  }
+  .resursGroup h1 {
+    font-size: 24px;
+  }
+  .resursGroup p {
+    font-size: 16px;
+  }
+  .imgResurs {
+    width: 70%;
+  }
+  .resursGroupBottom h2 { 
+    font-size: 24px;
+  }
+}

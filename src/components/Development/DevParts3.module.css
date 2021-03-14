@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+.parts3 {
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  background: #f2f8ff;
+}
+
+.capabilities {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+
+.capabilities h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 120%;
+}
+
+.worksGroup {
+  width: 70%;
+  display: flex;
+  margin: auto;
+}
+
+.worksLeft {
+  width: 60%;
+  background: #fff;
+  box-shadow: 0px 20px 40px rgba(9, 30, 66, 0.14);
+  border-radius: 12px;
+}
+
+.worksLeft h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+  margin: 2rem 0;
+  padding-left: 1rem;
+
+}
+
+.worksLeft p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.workCards {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  padding-left: 1rem;
+}
+
+.worksRight {
+  width: 40%;
+}
+
+.workBlocks {
+  display: flex;
+  align-items: center;
+}
+.square {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #091e42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  margin: 1.5rem;
+  cursor: pointer;
+  transition: ease-in-out 0.5s all;
+}
+
+.square:hover {
+  transform: skew(1.2);
+  background: #0052cc;
+  color: #fff;
+  border: none;
+  transform: scale(1.3) rotate(45deg);
+  transition: ease-in-out 0.5s all;
+}
+
+.textRight:hover {
+  color: #0052cc;
+  transition: ease-in-out 0.3s all;
+}
+
+.square p {
+  text-align: center;
+  transform: rotate(-45deg);
+  padding: 0;
+  margin: 0;
+}
+
+.textRight {
+  width: 50%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .worksGroup {
+    flex-direction: column;
+  }
+  .worksLeft {
+    box-shadow: none;
+    background: none;
+  }
+  .worksLeft {
+    width: 100%;
+  }
+  .worksRight {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .capabilities h1 {
+    font-size: 22px;
+  }
+  .worksLeft h2 {
+    font-size: 20px;
+  }
+
+  .square {
+    margin: 1.5rem 1.5rem 1.5rem 0;
+  }
+  .textRight {
+    width: 70%;
+  }
+}
