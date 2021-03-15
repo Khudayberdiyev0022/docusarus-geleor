@@ -1,21 +1,20 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
-}
-
 .parts1 {
-  padding: 20px 0;
+  padding-top: 100px;
   width: 100%;
   height: 100%;
   background: #f2f8ff;
+
+}
+
+.parts1 .container {
+  width: 80%;
+  height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  margin: auto;
 }
 
 .resursGroup {
-  width: 57%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,33 +22,33 @@
 }
 
 .resursGroup p {
+  width: 100%;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 150%;
 }
 
 .resursGroup h1 {
+  width: 100%;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
-  line-height: 120%;
 }
 
 .resursGroup .platforms {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 150%;
 }
 
 .imgResurs {
-  width: 35%;
-  background-size: cover;
+  width: 45%;
+  height: 100%;
+  background-size: contain;
 }
 
 .resursGroupBottom {
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -57,22 +56,24 @@
   font-style: normal;
   font-weight: bold;
   font-size: 42px;
-  line-height: 120%;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .resursGroupBottom p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 150%;
 }
 
 @media screen and (max-width: 1200px) {
   .resursGroup {
-    width: 80%;
+    padding-top: 3rem;
+    width: 90%;
     align-items: center;
     margin: auto;
+  }
+  .parts1 .container {
+    flex-direction: column;
   }
   .imgResurs {
     width: 50%;
@@ -92,12 +93,19 @@
     font-size: 24px;
   }
   .resursGroup p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .imgResurs {
-    width: 70%;
+    width: 100%;
+  }
+  .resursGroupBottom {
+    width: 80%;
   }
   .resursGroupBottom h2 { 
     font-size: 24px;
+  }
+  .resursGroup .platforms {
+    font-size: 16px;
+
   }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import style from "./Footer.module.css";
 
 const Footer = () => {
@@ -12,21 +11,21 @@ const Footer = () => {
           </li>
           <li>
             <h6>
-              <Link href="www.uz">Политика конфиденциальности</Link>
+              <a href="www.uz">Политика конфиденциальности</a>
             </h6>
           </li>
           <li>
             <h6>
               Иллюстрации
-              <Link to="https://stories.freepik.com">Freepik Stories</Link>
+              <a href="https://stories.freepik.com">Freepik Stories</a>
             </h6>
           </li>
           <li>
             <h6>
               Разработка дизайна сайта
-              <Link to="https://www.behance.net/gromova1_10792">
+              <a href="https://www.behance.net/gromova1_10792">
                 Анастасия Громова
-              </Link>
+              </a>
             </h6>
           </li>
         </ul>

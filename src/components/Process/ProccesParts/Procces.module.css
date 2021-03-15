@@ -1,0 +1,24 @@
+.main{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 10vh 0vh;
+    width: 100%;
+    height: 100%;
+    background-color: #F2F8FF;
+}
+.inMain {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    
+}
+
+
+@media screen and ( max-width: 800px ) {
+    .inMain {
+        width: 100%;
+    }
+}

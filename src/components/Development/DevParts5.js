@@ -3,7 +3,7 @@ import style from "./DevParts5.module.css";
 
 const DevParts5 = () => {
   return (
-    <div className={style.parts5}>
+    <div id="six" className={style.parts5}>
       <div className={style.capabilities}>
         <h1>Остались вопросы?</h1>
         <h2>Свяжитесь с нами!</h2>

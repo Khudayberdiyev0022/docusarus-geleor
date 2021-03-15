@@ -1,0 +1,219 @@
+.homeMobile {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .homeMobile {
+        width: 100%;
+        height: 100%;
+        padding: 15vh 0vh;
+        display: flex;
+        justify-content: center;
+        background: #f2f8ff;
+
+    }
+    .homeMobile .container {
+        width: 80%;
+    }
+    .homeMobile h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 120%;
+        margin-bottom: 1rem;
+    }
+    .homeMobile p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #091E42;
+        padding-bottom: 1rem;
+    }
+    .homeMobile .illustration {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .homeMobile .btnGroups {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .homeMobile .btnGroups button {
+        width: 100%;
+        height: 56px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 1rem;
+        border: 4px solid #0052cc;
+        cursor: pointer;
+      }
+      
+      .homeMobile .btnGroups .btnBlue {
+        background: #0052cc;
+        color: #fff;
+        outline: none;
+      }
+      .homeMobile .btnGroups .btnLight {
+        background: #fff;
+        color: #000;
+        outline: none;
+      }
+      
+      .homeMobile .btnGroups .btnBlue:active {
+        background: #fff;
+        color: #000;
+      }
+      
+      .homeMobile .btnGroups .btnLight:active {
+        background: #0052cc;
+        color: #fff;
+        outline: none;
+      }
+      .homeMobile .bracket {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+      }
+      
+      .homeMobile .bracket h1 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 75px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .homeMobile .bracket h2 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+      }
+      
+      .homeMobile .processor {
+          display: flex;
+          margin: auto;
+          padding-top: 2rem;
+      }
+      
+      .homeMobile .processor h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 120%;
+      }    
+      .homeMobile .homeParts2 p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        padding-bottom: 1rem;
+      }    
+      .homeMobile span {
+        font-weight: bold;
+      }  
+      .homeMobile button {
+        width: 100%;
+        height: 56px;
+        border: 4px solid #0052cc;
+        box-sizing: border-box;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #0052cc;
+        cursor: pointer;
+        outline: none;
+        margin-bottom: 1rem;
+      }
+      
+      .homeMobile button:active {
+        background: #0052cc;
+        color: #fff;
+      }
+      
+      .homeMobile button img {
+        vertical-align: sub;
+      }
+      
+      .homeMobile .readMoreBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+      }      
+      .homeMobile h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 120%;
+        padding-bottom: 2rem;
+      }
+      .homePart3mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .cardImgBgMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 80%;
+        border-radius: 50px;
+      }
+      .cardImgMobile {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #fff;
+        border: 2px solid #fff;
+        box-shadow: 10px 10px 5px #ccc;
+      }
+}
+@media screen and (max-width: 600px){
+  .homeMobile .container{
+    width: 90%;
+  }
+  .cardImgBgMobile{
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 500px){
+  .homeMobile .container{
+    width: 80%;
+  }
+  .cardImgBgMobile{
+    height: 86vh;
+  }
+}
+@media screen and (max-width: 350px){
+  .homeMobile .container{
+    width: 100%;
+  }
+  .cardImgBgMobile{
+    height: 65vh;
+    width: 90%;
+  }
+}

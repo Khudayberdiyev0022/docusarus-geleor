@@ -1,0 +1,95 @@
+.main{
+    width: 250px;
+    min-height: 250px;
+    background-color: #fff;
+    position: fixed;
+    top: 10vh;
+    left: 10%;
+    z-index: 100;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+.services{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.services h1{
+    font-size: 18px;
+    font-weight: 800;
+}
+.services svg{
+    cursor: pointer;
+}
+.servicesInfo{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.servicesInfo h3{
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.servicesInfo a{
+    text-decoration: none;
+    color: #000;
+}
+.servicesInfo .clicked {
+    font-size: 15px;
+    font-weight: 300;
+    color: blue;
+    cursor: pointer;
+    border-left: 3px solid blue;
+    padding-left: 10px;
+}
+.clicked a{
+    color: blue;
+}
+.info{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.info h1{
+    font-size: 18px;
+    font-weight: 800;
+}
+.info svg{
+    cursor: pointer;
+}
+.education{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px 0px;
+}
+.education h1{
+    font-size: 18px;
+    font-weight: 800;
+}
+.education h2{
+    font-size: 16px;
+    padding: 0px 5px;
+    background-color: aliceblue;
+    color: blue;
+}
+@media screen and (max-width: 700px){
+    .main{
+        display: none;
+    }
+}

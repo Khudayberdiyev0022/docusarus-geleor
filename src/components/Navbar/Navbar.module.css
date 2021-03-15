@@ -1,0 +1,168 @@
+.main{
+    width: 100%;
+    min-height: 15vh;
+    position: fixed;
+    z-index: 100;
+    transition: all 1s ease;
+}
+.scrolled.main{
+    background-color: rgb(255, 255, 255);
+    opacity: .8;
+}
+.notScrolled.main{
+    background-color: transparent;
+}
+.navbarLaptop > h3{
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+}
+.navbarLaptop{
+    width: 80%;
+    margin: auto;
+    height:15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbarLaptop h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #0052CC;
+    cursor: pointer;
+}
+.navbarLaptop  a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+.navbarLaptop h3 {
+    padding: 0px;
+}
+.links{
+    width: 284px;
+    height: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.links a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #091E42;
+}
+.navbarPhone{
+    display: none;
+}
+@media screen and (max-width:700px){
+    .navbarLaptop{
+        display: none;
+    }
+    .navbarPhone{
+        width: 100%;
+        display: block;
+        min-height: 15vh;
+        position: fixed;
+        background-color: #fff;
+    }
+    .visible{
+        margin: auto;
+        width:90%;
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbarPhone h1{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        color: #0052CC;
+    }
+    .navbarPhone h1 a{
+        text-decoration: none;
+    }
+    .navbarPhone svg{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .invisible{
+        width: 100%;
+        background-color: #091E42;
+        transition: all 1s ease;
+        overflow: hidden
+    }
+    .invisible.clicked{
+        height: 90vh;
+    }
+    .invisible.nonClicked{
+        height: 0vh;
+    }
+    .navbarPhone .container{
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navbarPhone .links{
+        transition: all 2s ease;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .links.clicked{
+        height: 40vh;
+    }
+    .links.nonClicked{
+        height: 0vh;
+    }
+    .navbarPhone .links a{
+        font-family: Montserrat;
+        width: 100%;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #F2F8FF;
+        text-decoration: none;
+        padding: 25px;
+    }
+    .button{
+        width: 80%;
+        margin: auto;
+        border: 5px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+    .button h1{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #F2F8FF;
+        padding: 5px;
+        transition: all 1s ease;
+    }
+    .button:hover{
+        background-color: #07152e;
+        color: #fff;
+        transition: all 1s ease;
+    }
+}

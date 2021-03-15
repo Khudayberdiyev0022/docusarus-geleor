@@ -1,0 +1,62 @@
+.main{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+    width: 90%;
+    margin: auto;
+}
+.card h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    color: #091E42;
+    margin-bottom: 30px;
+}
+.cardFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.cardFlex .inFlex{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 22px;
+}
+.cardFlex .icon{
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.inFlex .p{
+}
+.cardFlex .p p{
+    font-family: Montserrat;
+    max-width: 32   0px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 14px;
+
+}
+@media screen and ( max-width: 800px ) {
+    .main{
+        display: flex;
+    }
+}

@@ -6,8 +6,9 @@
 }
 
 .homeParts2 {
+  
   width: 100%;
-  height: 150vh;
+  height: 130vh;
   background: #f2f8ff;
   background-image: url(../../assets/vector8.png);
   background-size: contain;
@@ -16,7 +17,7 @@
 }
 .container {
   display: flex;
-  width: 85%;
+  width: 80%;
   height: 100%;
   margin: auto;
 }
@@ -30,8 +31,8 @@
   margin: auto;
 }
 
-p {
-  width: 80%;
+.homeParts2 p {
+  /* width: 80%; */
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -83,10 +84,16 @@ span {
 }
 
 h3 {
-  width: 70%;
+  /* width: 70%; */
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 120%;
   padding-bottom: 2rem;
+}
+
+@media screen and (max-width:1200px){
+  .homeParts2 {
+    height: 150vh;
+  }
 }

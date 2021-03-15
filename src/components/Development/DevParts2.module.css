@@ -1,10 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
-}
-
 .parts2 {
   padding: 20px 0;
   width: 100%;
@@ -13,10 +6,9 @@
 }
 
 .capabilities {
-  width: 70%;
+  width: 80%;
   margin: auto;
-  padding-top: 7rem;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
 }
 
 .capabilities h1 {
@@ -26,9 +18,9 @@
   line-height: 120%;
 }
 
-.leftBlock {
+/* .leftBlock {
   height: 100%;
-}
+} */
 
 .rightBlock {
   height: 80%;
@@ -39,7 +31,7 @@
 
 .cardGroups {
   height: 80%;
-  width: 70%;
+  width: 80%;
   display: flex;
   margin: auto;
 }
@@ -53,7 +45,7 @@
   margin-bottom: 10px;
 }
 
-.cardGroups h6 {
+.cardGroups h5 {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
