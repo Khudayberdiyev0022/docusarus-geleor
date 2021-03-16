@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     margin: auto;
     height: 100%;
 }
@@ -76,7 +76,7 @@
 
 }
 .map{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
@@ -85,23 +85,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 74%;
 }
 .cardMap{
     display: flex;
     flex-direction: column;
-
+    width: 32%;
     /* margin-left: 10px; */
 }
 .menu{
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
     text-align: left;
     border: 4px solid transparent;
     /* margin-top: 4px; */
-    width: 100%;
-    min-width: 210px ;
+    width: 22%
 }
 .sec{
     display: flex;
@@ -160,7 +158,7 @@
     margin-left: 8px;
 }
 
-@media screen and (max-width: 1000px ) {
+@media screen and (max-width: 850px ) {
     .main{
         display: none;
     }

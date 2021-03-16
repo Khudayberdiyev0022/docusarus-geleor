@@ -9,9 +9,11 @@ const DevParts5 = () => {
         <h2>Свяжитесь с нами!</h2>
       </div>
       <form>
-        <input type="text" placeholder="Имя" />
-        <input type="text" placeholder="Телефон" />
-        <button type="button">Заказать звонок</button>
+        <div className={style.buttons}>
+          <input type="text" placeholder="Имя" />
+          <input type="text" placeholder="Телефон" />
+          <button type="button">Заказать звонок</button>
+        </div>
         <p>
           Нажимая на кнопку “Заказать звонок”, вы соглашаетесь с условиями
           <a href="https://google.com">политики конфиденциальности</a>

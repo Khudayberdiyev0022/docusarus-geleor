@@ -56,8 +56,8 @@ function Navbar() {
           </h3>
         )}
         {building && logoClicked && (
-          <h3>
-            <Link to="/">Главная</Link> / Построение процессов CI/CD
+          <h3 style={{ wordWrap: "10px" }}>
+            <Link to="/">Главная / </Link> Построение процессов CI/CD
           </h3>
         )}
         <div className={style.links}>

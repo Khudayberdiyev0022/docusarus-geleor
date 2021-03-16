@@ -31,10 +31,18 @@
 .parts5 form {
   width: 80%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-
+.parts5 .buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .parts5 input {
-  width: 250px;
+  width: 31%;
   height: 56px;
   border-radius: 4px;
   font-style: normal;
@@ -43,11 +51,10 @@
   line-height: 20px;
   padding: 10px;
   border: none;
-  margin-right: 1rem;
 }
 
 .parts5 button {
-  width: 200px;
+  width: 31%;
   height: 56px;
   background: #0052cc;
   color: #fff;
@@ -68,7 +75,6 @@
 }
 
 .parts5 p {
-  display: flex;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -82,7 +88,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 800px) {
   .capabilities {
     padding-top: 0;
     padding-bottom: 0;
@@ -93,20 +99,18 @@
   .capabilities h2 {
     font-size: 22px;
   }
-  .parts5 form {
-    flex-direction: column;
-  }
-  .parts5 input {
-    width: 100%;
-    margin: 1rem 0;
-  }
-  .parts5 button {
-    width: 100%;
-  }
+  
   .parts5 p {
     width: 100%;
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons input, .buttons button{
+    width: 100%;
+    margin:10px auto;
   }
 }

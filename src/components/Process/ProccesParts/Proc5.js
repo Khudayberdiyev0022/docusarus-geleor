@@ -14,18 +14,6 @@ const Proc5 = () => {
   return (
     <div className={Style.main}>
       <div className={Style.inMain}>
-        <div className={Style.one}>
-          <h2>Стоимость</h2>
-          <div className={Style.card}>
-            <p>
-              В основном зависит от желаемого уровня автоматизации и
-              особенностей Вашего приложения. Ниже приведены примеры расчета
-              стоимости проектов. Для обсуждения именно Вашего проекта,
-              пожалуйста, свяжитесь с нами.
-            </p>
-            <button>Узнать стоимость</button>
-          </div>
-        </div>
         <div className={Style.map}>
           <div className={Style.inMap}>
             {comp.map((card, index) => {

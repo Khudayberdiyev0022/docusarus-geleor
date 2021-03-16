@@ -21,7 +21,7 @@
 }
 
 .cost {
-  min-height: 30vh;
+  min-height: 20vh;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@
   box-shadow: 0px 20px 40px rgba(9, 30, 66, 0.14);
   border-radius: 12px;
   margin: auto;
-  padding: 25px;
+  padding: 20px;
 }
 
 .cost button {

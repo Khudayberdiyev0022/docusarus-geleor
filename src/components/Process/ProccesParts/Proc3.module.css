@@ -10,10 +10,10 @@
 .inMain{
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin: auto;
-    padding: 0;
-    max-width: 1170px;
+    width: 80%;
+    /* margin: auto; */
+    /* padding: 0; */
+    /* max-width: 1170px; */
 
 
 }
@@ -32,7 +32,7 @@
     color: #091E42;
 
 }
-.cards{
+/* .cards{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,25 +41,35 @@
     height: 100%;
     margin: 0;
     padding: 0;
-}
+} */
 .cardFlex{
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    /* justify-content: space-between; */
     /* align-items: center; */
 }
-.cardFlex .comp1, .comp2{
+.cardFlex .comp1{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: 50%;
 
+}
+.cardFlex .comp2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    padding-left: 50px;
 }
 .comp1 .dash{
     position: absolute;
     right: 0;
-    top: 74px;
+    top: 3%;
     width: 50%;
-    height: 1294px;
+    height: 70%;
     border-right: 4px dashed #DBE2EC  ;
     z-index: 0  ;
 }
@@ -69,28 +79,48 @@
 .relative .dash1{
     position: absolute;
     right: 0;
-    top: 72px;
-    width: 280px;
+    top: 8%;
+    width: 20%;
     border-top: 4px dashed #DBE2EC  ;
     z-index: 0  ;
 }
 .comp2 .dash2{
     position: absolute;
-    left: 0;
-    top: 72px;
-    width: 52px;
+    left: -7%;
+    top: 8%;
+    width: 7%;
     border-top: 4px dashed #DBE2EC  ;
     z-index: 0  ;
 }
 .cardFlex .comp2{
+    width: 50%;
     margin-top: 100px;
 }
-@media screen and ( min-width: 1380px ) {
-    .comp1 .dash{
-        height: 1222px;
+ @media screen and ( max-width: 1680px ) {
+    .comp2 .dash2{
+        left: -8%;
 
     }
 }
+@media screen and ( max-width: 1380px ) {
+    .comp2 .dash2{
+        left: -9%;
+
+    }
+}
+@media screen and ( max-width: 1180px ) {
+    .comp2 .dash2{
+        left: -12%;
+
+    }
+}
+@media screen and ( max-width: 1000px ) {
+    .comp2 .dash2{
+        left: -16%;
+        width: 15%;
+    }
+}
+/*
 @media screen and ( max-width: 1380px ) {
     .comp1 .dash{
         height: 1292px;
@@ -146,7 +176,7 @@
 
     }
 }
-
+ */
 @media screen and ( max-width: 800px ) {
     .cardFlex {
         flex-direction: column;
@@ -159,6 +189,17 @@
     }
     .dash2{
         display: none;
+    }
+    .cardFlex .comp1{
+        width: 100%;
+    }
+    .cardFlex .comp2{
+        width: 100%;
+        padding:20px 0px;
+        margin: 0px;
+    }
+    .cardFlex .comp2 > div,.cardFlex .comp1 > div{
+        margin: 10px 0px;
     }
 }
 

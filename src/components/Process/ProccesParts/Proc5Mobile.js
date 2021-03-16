@@ -12,7 +12,7 @@ const Proc5Mobile = () => {
     return (
         <div className={Style.main} >
             <div className={Style.inMain} >
-                <div className={Style.one} >
+                {/* <div className={Style.one} >
                     <h2>
                         Стоимость
                     </h2>
@@ -25,7 +25,7 @@ const Proc5Mobile = () => {
                             Узнать стоимость
                         </button>
                     </div>
-                </div>
+                </div> */}
                 <div className={Style.map}>
                     
                     {

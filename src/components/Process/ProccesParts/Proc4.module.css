@@ -34,13 +34,14 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 .flex .map{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 730px;
+    width: 70%;
     height: 350px;
     margin: 0;    
     background: #FFFFFF;
@@ -71,7 +72,7 @@
 }
 .cardFlex .inFlex{
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 22px;
     width: 80%;
@@ -89,16 +90,15 @@
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 24px;
-
+    width: 90%;
 }
 .flex .categories{
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;    
-    /* width: 100%; */
-    margin-left: 42px;
+    width: 25%;
+    /* margin-left: 42px; */
 }
 .categories .dash{
     position: absolute;
@@ -155,7 +155,7 @@
     margin-left: 27px;
     transition: all 0.3s ease;
     cursor: pointer;
-
+    width: 35%;
 }
 
 
@@ -243,14 +243,66 @@
     margin-left: 27px;
     transition: all 0.3s ease;
     cursor: pointer;
-
+    width: 35%;
 }
 @media screen and ( max-width: 800px ) {
-    .inMain .flex{
-        display: none;
-        overflow: hidden;
-    }
+    
     .inMain h2{
-       font-size: 32px;
+       font-size: 24px;
+       margin-bottom: 24px;
+    }
+    .flex{
+        flex-direction: column-reverse;
+    }
+    .flex  .categories{
+        width: 100%;
+        flex-direction: row;
+        padding: 25px 0px;
+    }
+    .flex .categories > div{
+        width: 25%;
+        flex-direction: column;
+        height: 20vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .flex .categories > div p:nth-child(2){
+        width: 90%;
+        text-align: center;
+    }
+    .flex .categories>span{
+        display: none;
+    }
+    .flex .map{
+        width: 100%;
+        margin-bottom: 20px;
+        height: 100%;
+    }
+    .categ p{
+        margin-left: 0px;
     }
 }
+@media screen and ( max-width: 720px ){
+    .flex .categories {
+        flex-direction: column
+    }
+    .flex .categories > div{
+        flex-direction: row;
+        width: 100%;
+        height: 5vh;
+
+    }
+    .categ2 p{
+        margin-left: 0px;
+    }
+    .flex .categories > div p:nth-child(2){
+        width: 50%;
+        text-align: left;
+    }
+    .main h2{
+        font-size: 20px;
+    }
+    .main{
+        padding: 0px;
+    }
+} 
